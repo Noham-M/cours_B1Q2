@@ -1,0 +1,49 @@
+prise de note 1er cour :
+
+fonctions de calculs sur un groupement (ex: compter ou faire une moyenne d'un groupement par rapport a un critère)
+compter (retourne une seul valeur entière) (peut avoir distinct ou all)
+moyenne (ne prend pas en compte les valeur "null" dans le calcul) (retourne une seule valeur ou "null" si aucun tuple n'est sélectionné)
+somme (même condition que pour la moyenne)
+min (même condition que pour la moyenne) (fonctionne aussi avec les chaines de caractères grâce au code ascii)
+max (même condition que pour la moyenne) (fonctionne aussi avec les chaines de caractères grâce au code ascii)
+
+opérateur de groupement: 
+
+group by(attr grp) (retourne une valeur par groupe) (on ne peut sélectionné que la valeur sur laquelle on groupe) 
+
+select AVG(degre)
+from vin
+where cru like 'V%'
+
+select region, cru, min(millesime)
+from vin
+group by region, cru
+
+select magasin, sum(montant) as total
+from vente 
+group by magasin
+
+sélection de groupement :
+
+having (placé entre where et order by) (group by obligatoire) (équivalent a faire un 'where' dans un groupement)
+
+select magasin, sum(montant)
+from vente
+group by magasin
+having sum(montant) >= 1500
+
+select magasin, min(montant)
+from vente
+group by magasin
+having count(*) > 2
+
+opérateurs ensemblistes : 
+
+union (all/distinct)
+intersection
+difference
+
+
+
+
+

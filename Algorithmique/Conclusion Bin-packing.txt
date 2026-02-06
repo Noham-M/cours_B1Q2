@@ -1,0 +1,23 @@
+Conclusion Bin-packing:
+dans certain problème il n'y aura pas de d'algorithme parfait, mais pour certaines instances, certains algo sont meilleurs
+la première solutions ne sera pas tjrs la meilleur
+il faut chercher plusieurs instances du problème pour vérifier notre algorithmique
+
+définition domaine: 
+ensembles des valeurs en entrée pour laquelle l'algorithme donne une solution au problème à résoudre, variable en entrée de l'algo
+
+précondition du problème:
+pas plus de 7 personnes dans un groupe et pas moins de 1 personne 
+minimum 1 groupe
+il y a nombre naturel non-nul de bus
+les groupes ne peuvent pas être séparé 
+
+exactitude d'un algorithme : 
+pour toute instance du problème posé, l'algorithme produit le résultat escompté en un temp fini
+-complétude 
+-correction partielle
+-terminaison
+
+test bin-packing :
+-a t'on bien le nombre minimum de bus 
+-
